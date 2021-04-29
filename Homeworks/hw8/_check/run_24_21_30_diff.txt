@@ -1,0 +1,6 @@
+838c838
+< 1697 microseconds occured
+---
+> 5674 microseconds occured
+
+p = 9

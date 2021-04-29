@@ -1,0 +1,6 @@
+232c232
+< 166 microseconds occured
+---
+> 1394 microseconds occured
+
+p = 9

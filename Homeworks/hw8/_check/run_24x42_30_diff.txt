@@ -1,0 +1,6 @@
+838c838
+< 3457 microseconds occured
+---
+> 15689 microseconds occured
+
+p = 36

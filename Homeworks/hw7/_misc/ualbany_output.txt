@@ -1,0 +1,91 @@
+Serial
+Params: 700
+	Average Time: 22.2
+Params: 1400
+	Average Time: 37.8
+Params: 2500
+	Average Time: 76.4
+Params: 5000
+	Average Time: 141.8
+Params: 10000
+	Average Time: 286.2
+Params: 20000
+	Average Time: 476.6
+Params: 30000
+	Average Time: 854.2
+Params: 50000
+	Average Time: 1346.4
+Params: 60000
+	Average Time: 1582.8
+Params: 70000
+	Average Time: 2072.6
+Params: 80000
+	Average Time: 2278.0
+Params: 90000
+	Average Time: 2481.2
+Params: 100000
+	Average Time: 2670.2
+Params: 200000
+	Average Time: 5592.8
+Params: 500000
+	Average Time: 12553.4
+Params: 1000000
+	Average Time: 23912.4
+Params: 2500000
+	Average Time: 57227.6
+Params: 5000000
+	Average Time: 112797.0
+Params: 10000000
+	Average Time: 229064.4
+Params: 25000000
+	Average Time: 555758.4
+Params: 50000000
+	Average Time: 1115379.2
+Params: 100000000
+	Average Time: 2229397.4
+
+Distributed
+Params: 700
+	Average Time: 1158.8
+Params: 1400
+	Average Time: 1249.8
+Params: 2500
+	Average Time: 1270.8
+Params: 5000
+	Average Time: 1229.2
+Params: 10000
+	Average Time: 1387.8
+Params: 20000
+	Average Time: 1450.6
+Params: 30000
+	Average Time: 1225.2
+Params: 50000
+	Average Time: 1525.0
+Params: 60000
+	Average Time: 1649.8
+Params: 70000
+	Average Time: 1549.4
+Params: 80000
+	Average Time: 1603.8
+Params: 90000
+	Average Time: 1646.0
+Params: 100000
+	Average Time: 1673.8
+Params: 200000
+	Average Time: 2093.4
+Params: 500000
+	Average Time: 3117.6
+Params: 1000000
+	Average Time: 4864.4
+Params: 2500000
+	Average Time: 14029.2
+Params: 5000000
+	Average Time: 20769.8
+Params: 10000000
+	Average Time: 45879.4
+Params: 25000000
+	Average Time: 100309.6
+Params: 50000000
+	Average Time: 193854.6
+Params: 100000000
+	Average Time: 392245.8

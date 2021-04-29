@@ -1,0 +1,67 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CSI 520 Project - Jobs</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" th:href="@{/}">
+            <!-- <img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+            <b>CSI 520 Project - Jobs</b>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/}">Submit</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="jobs">Jobs <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="workers">Workers</a>
+                </li>
+        </div>
+    </nav>
+
+    <!-- <br />
+    <p th:text="'Hello ' + ${username} + '!'" align="center"></p> -->
+
+    <br />
+    <table class="table" align="center">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Job Type</th>
+                <th scope="col">Input</th>
+                <th scope="col">Status</th>
+                <th scope="col">Workers</th>
+                <th scope="col">Processed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="job : ${jobs}">
+                <td th:text="${job.id}"></td>
+                <td th:text="${job.jobType}"></td>
+                <td><a th:href="@{/downloadFile(file=${job.getInputFilePath()})}" th:text="${job.inputFilename}"></a></td>
+                <td th:text="${job.status}"></td>
+                <td th:text="${job.getNumberOfWorkers()}"></td>
+                <td><a th:href="@{/downloadFile(file=${job.getOutputFilePath()})}" th:text="${job.outputFilename}"></a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- JavaScript -->
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
